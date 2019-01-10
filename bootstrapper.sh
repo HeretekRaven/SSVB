@@ -35,9 +35,9 @@ sudo xbps-install -y xrandr || echo "critical failure(II)" >> ErrorLog.txt;
 #Dot file setup/creation
 echo "Setting up dot files";
 #sudo xbps-install -y git || echo "critical failure(III)";
-sudo touch ~/.xinitrc; "exec compton &" >> ~/.xinitrc; "exec ~/initscripts/polylauncher.sh &" >> ~/.xinitrc;
-"exec feh --bg-fill ~/initscripts/wp.jpg &" >> ~/.xinitrc; "exec i3" >> ~/.xinitrc;
-sudo mkdir ~/.config/i3; sudo mv ~/initscripts/config ~/.config/i3;
+sudo cp ~/initscripts/.xinitrc ~;
+sudo mkdir ~/.config/i3;
+sudo cp ~/initscripts/config ~/.config/i3;
 
 sudo Xorg -configure;
 
