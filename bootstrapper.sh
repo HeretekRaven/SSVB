@@ -35,7 +35,10 @@ sudo xbps-install -y ImageMagick || echo "critical failure(II)6" >> ErrorLog.txt
 #Dot file setup/creation
 echo "Setting up dot files";
 #sudo xbps-install -y git || echo "critical failure(III)";
-touch ~/.xinitrc; "exec compton &" >> .xinitrc; "exec i3" >> .xinitrc;
+sudo touch ~/.xinitrc; "exec compton &" >> ~/.xinitrc; "exec ~/initscripts/multi-screen.sh &" >> ~/.xinitrc; "exec ~/initscripts/polylauncher.sh &" >> ~/.xinitrc;
+"exec feh --bg-fill ~/initscripts/wp.jpg &" >> ~/.xinitrc; "exec i3" >> ~/.xinitrc;
+sudo mkdir ~/.config/i3; sudo mv ~/initscripts/config ~/.config/i3;
+
 sudo Xorg -configure;
 
 echo "Run part II to finish the configuration of i3 and polybar...";
