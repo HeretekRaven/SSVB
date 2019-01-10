@@ -30,12 +30,12 @@ sudo xbps-install -y polybar || echo "critical failure(II)3" >> ErrorLog.txt;
 sudo xbps-install -y neofetch || echo "critical failure(II)4" >> ErrorLog.txt;
 sudo xbps-install -y gimp || echo "critical failure(II)5" >> ErrorLog.txt;
 sudo xbps-install -y ImageMagick || echo "critical failure(II)6" >> ErrorLog.txt;
-#sudo xbps-install -y  || echo "critical failure(II)";
+sudo xbps-install -y xrandr || echo "critical failure(II)" >> ErrorLog.txt;
 
 #Dot file setup/creation
 echo "Setting up dot files";
 #sudo xbps-install -y git || echo "critical failure(III)";
-sudo touch ~/.xinitrc; "exec compton &" >> ~/.xinitrc; "exec ~/initscripts/multi-screen.sh &" >> ~/.xinitrc; "exec ~/initscripts/polylauncher.sh &" >> ~/.xinitrc;
+sudo touch ~/.xinitrc; "exec compton &" >> ~/.xinitrc; "exec ~/initscripts/polylauncher.sh &" >> ~/.xinitrc;
 "exec feh --bg-fill ~/initscripts/wp.jpg &" >> ~/.xinitrc; "exec i3" >> ~/.xinitrc;
 sudo mkdir ~/.config/i3; sudo mv ~/initscripts/config ~/.config/i3;
 
