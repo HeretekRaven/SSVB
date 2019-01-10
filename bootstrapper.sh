@@ -9,7 +9,7 @@ sudo xbps-install -y xorg || echo "critical failure";
 sudo xbps-install -y alsa-utils || echo "critical failure";
 sudo xbps-install -y xterm || echo "critical failure";
 sudo xbps-install -y konsole || echo "critical failure";
-sudo xbps-install -y xorg-init || echo "critical failure"; #Double check name
+sudo xbps-install -y xorg-xinit || echo "critical failure"; #Double check name
 sudo xbps-install -y i3-gaps || echo "critical failure";
 sudo xbps-install -y i3status || echo "critical failure";
 sudo xbps-install -y xorg-twm || echo "critical failure"; #Double check name
