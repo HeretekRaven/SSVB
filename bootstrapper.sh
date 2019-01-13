@@ -35,7 +35,7 @@ sudo xbps-install -y xrandr || echo "critical failure(II)" >> ErrorLog.txt;
 #Dot file setup/creation
 echo "Setting up dot files";
 #sudo xbps-install -y git || echo "critical failure(III)";
-sudo cp ~/initscripts/.xinitrc ~;
+cp ~/initscripts/.xinitrc ~;
 sudo mkdir ~/.config/i3;
 sudo cp ~/initscripts/config ~/.config/i3;
 
