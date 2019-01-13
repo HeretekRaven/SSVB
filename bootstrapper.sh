@@ -38,9 +38,9 @@ echo "Setting up dot files";
 sudo cp /home/$USER/initscripts/.xinitrc /home/$USER;
 sudo mkdir /home/$USER/.config/i3;
 sudo cp /home/$USER/initscripts/config /home/$USER/.config/i3;
-
+sudo chmod +x polylauncher.sh multi-screen.sh;
 sudo Xorg -configure;
 
-echo "Run part II to finish the configuration of i3 and polybar...";
+echo "Setup should be complete. If something is missing, check the initscripts folder for an error log.";
 sleep 5s;
 startx;
