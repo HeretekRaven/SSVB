@@ -35,10 +35,10 @@ sudo xbps-install -y xrandr || echo "critical failure(II)" >> ErrorLog.txt;
 #Dot file setup/creation
 echo "Setting up dot files";
 #sudo xbps-install -y git || echo "critical failure(III)";
-sudo cp /home/$USER/initscripts/.xinitrc /home/$USER;
-sudo mkdir /home/$USER/.config/i3;
-sudo cp /home/$USER/initscripts/config /home/$USER/.config/i3;
-sudo chmod +x polylauncher.sh multi-screen.sh;
+sudo cp /home/$SUDO_USER/initscripts/.xinitrc /home/$SUDO_USER;
+sudo mkdir /home/$SUDO_USER/.config/i3;
+sudo cp /home/$SUDO_USER/initscripts/config /home/$SUDO_USER/.config/i3;
+cd /home/$SUDO_USER/initscripts; sudo chmod +x polylauncher.sh multi-screen.sh;
 sudo Xorg -configure;
 
 echo "Setup should be complete. If something is missing, check the initscripts folder for an error log.";
