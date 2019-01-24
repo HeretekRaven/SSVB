@@ -1,4 +1,4 @@
 exec compton &
-exec ~/initscripts/polylauncher.sh &
-exec feh --bg-fill ~/initscripts/wp.jpg &
+exec wal -i ~/initscripts/wp.jpg &
+exec xrdb ~/.Xresources &
 exec i3
