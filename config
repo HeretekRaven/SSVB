@@ -18,7 +18,7 @@ for_window [class=".*"] border pixel 0
 hide_edge_borders both
 
 
-
+exec xset s 1000
 
 
 
