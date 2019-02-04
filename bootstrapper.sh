@@ -40,7 +40,7 @@ sudo mkdir /home/$SUDO_USER/.config/i3;
 sudo cp /home/$SUDO_USER/initscripts/config /home/$SUDO_USER/.config/i3;
 mv /home/$SUDO_USER/initscripts/.Xresources /home/$SUDO_USER;
 sudo rm -f /home/$SUDO_USER/.bashrc; sudo mv /home/$SUDO_USER/initscripts/.bashrc /home/$SUDO_USER;
-cd /home/$SUDO_USER/initscripts; sudo chmod +x polylauncher.sh multi-screen.sh;
+#cd /home/$SUDO_USER/initscripts; sudo chmod +x polylauncher.sh multi-screen.sh;
 sudo Xorg -configure;
 
 echo "Setup should be complete. If something is missing, check the initscripts folder for an error log.";
