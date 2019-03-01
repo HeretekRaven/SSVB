@@ -44,5 +44,3 @@ sudo rm -f /home/$SUDO_USER/.bashrc; sudo mv /home/$SUDO_USER/initscripts/.bashr
 sudo Xorg -configure;
 
 echo "Setup should be complete. If something is missing, check the initscripts folder for an error log.";
-sleep 5s;
-startx;
